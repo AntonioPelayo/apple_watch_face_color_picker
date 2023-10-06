@@ -44,7 +44,7 @@ function populateNameDropdown(season, colorData) {
     if (season === "All Seasons") {
         filteredData = colorData;
     } else {
-        filteredData = colorData.filter(data => data[0] === season);
+        filteredData = colorData.filter(data => data[1] === season);
     }
 
     filteredData.forEach(data => {
@@ -57,6 +57,8 @@ function populateNameDropdown(season, colorData) {
     nameDropdown.addEventListener('change', function() {
         setBackgroundColorByName(this.value, colorData);
     });
+
+    setBackgroundColorByName(filteredData[0][2], colorData);
 }
 
 function setBackgroundColorByName(name, colorData) {

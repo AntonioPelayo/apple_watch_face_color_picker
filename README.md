@@ -10,6 +10,12 @@ This is a simple web application that allows users to change the background colo
 
 ## Usage
 
+### Webpage
+
+[Apple Watch Face Color Picker](https://antoniopelayo.github.io/apple_watch_face_color_picker/website/index.html)
+
+### Local
+
 1. Select a season from the first dropdown to filter the colors by season.
 
 2. Select a color from the second dropdown.
