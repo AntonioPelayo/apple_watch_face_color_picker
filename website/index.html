@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Background Color Changer</h1>
+
+    <label for="seasonDropdown">Choose a season:</label>
+    <select id="seasonDropdown">
+    </select>
+
+    <label for="nameDropdown">Choose a color by name:</label>
+    <select id="nameDropdown">
+    </select>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            loadCSV('../data/watch_face_colors.csv');
+        });
+    </script>
+
+</body>
+</html>

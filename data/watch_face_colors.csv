@@ -1,0 +1,117 @@
+Number,Season,Name,R,G,B
+1,Spring 2015,White,255,255,255
+2,Spring 2015,Green,160,225,80
+3,Spring 2015,Blue,85,178,246
+4,Spring 2015,Pink,236,101,105
+5,Spring 2015,Purple,148,125,239
+6,Spring 2015,Light Orange,241,154,55
+7,Spring 2015,Gold,182,147,105
+8,Spring 2015,Rose Gold,225,168,138
+9,Spring 2015,Yellow Gold,204,168,129
+10,Fall 2015,Red,152,49,34
+11,Fall 2015,Orange,237,110,50
+12,Fall 2015,Turquoise,169,211,204
+13,Fall 2015,Light Blue,128,195,218
+14,Fall 2015,Midnight Blue,70,77,115
+15,Fall 2015,Lavender,174,155,165
+16,Fall 2015,Vintage Rose,223,175,167
+17,Fall 2015,Walnut,170,136,105
+18,Fall 2015,Stone,171,154,131
+19,Fall 2015,Antique White,207,183,152
+20,Spring 2016,Apricot,235,124,90
+21,Spring 2016,Yellow,228,205,70
+22,Spring 2016,Mint,187,234,165
+23,Spring 2016,Royal Blue,117,172,233
+24,Spring 2016,Light Pink,234,179,172
+25,Fall 2016,Ocean Blue,119,135,193
+26,Fall 2016,Cocoa,152,142,139
+27,Spring 2017,Azure,138,153,160
+28,Spring 2017,Camellia,186,78,73
+29,Spring 2017,Pebble,170,157,143
+30,Summer 2017,Pollen,248,212,111
+31,Summer 2017,Mist Blue,180,184,169
+32,Summer 2017,Flamingo,200,135,111
+33,Fall 2017,Flash,228,242,86
+34,Fall 2017,Blue Cobalt,71,126,157
+35,Fall 2017,Ultra Violet,109,88,184
+36,Fall 2017,Pink Sand,246,196,173
+37,Fall 2017,Electric Pink,236,92,88
+38,Fall 2017,Rose Red,170,55,72
+39,Fall 2017,Soft White,221,210,187
+40,Fall 2017,Dark Olive,140,140,120
+41,Winter 2017,Dark Teal,69,114,144
+42,Spring 2019,Peach,215,131,101
+43,Spring 2019,Flash Light,245,236,78
+44,Spring 2019,Denim Blue,100,130,165
+45,Fall 2018,Storm Gray,113,150,150
+46,Fall 2018,Blue Horizon,54,102,155
+47,Fall 2018,Indigo,90,99,159
+48,Fall 2018,Lavender Gray,134,134,163
+49,Winter 2018,Mellow Yellow,246,244,192
+50,Winter 2018,Pacific Green,55,125,155
+51,Winter 2018,Hibiscus,232,60,92
+52,Spring 2019,Papaya,239,139,82
+53,Spring 2019,Spearmint,156,231,149
+54,Spring 2019,Cerulean,159,196,229
+55,Spring 2019,Lilac,179,165,221
+56,Spring 2019,Delft Blue,94,118,186
+57,Summer 2019,Canary Yellow,250,223,98
+58,Summer 2019,Dragon Fruit,225,87,126
+59,Fall 2019,Clementine,237,114,83
+60,Fall 2019,Lemon Cream,252,236,140
+61,Fall 2019,Alaskan Blue,101,110,130
+62,Fall 2019,Pine Green,100,124,103
+63,Fall 2019,Camel,177,145,102
+64,Winter 2019,Beryl,219,241,194
+65,Winter 2019,Pomegranate,206,61,97
+66,Winter 2019,Khaki,137,127,93
+67,Spring 2020,Cactus,113,137,129
+68,Spring 2020,Surf Blue,62,131,179
+69,Spring 2020,Grapefruit,244,180,146
+70,Spring 2020,Neon Pink,235,77,69
+71,Summer 2020,Sea Foam,218,241,222
+72,Summer 2020,Linen Blue,90,106,145
+73,Summer 2020,Coastal Gray,127,112,98
+74,Fall 2020,Pink Citrus,221,91,80
+75,Fall 2020,Deep Navy,96,113,150
+76,Fall 2020,Northern Blue,123,154,156
+77,Fall 2020,Kumquat,238,142,92
+78,Fall 2020,Cream,250,228,188
+79,Fall 2020,Cyprus Green,101,110,91
+80,Fall 2020,Plum,137,72,77
+81,Spring 2021,Sunflower,242,165,58
+82,Spring 2021,Pistachio,199,222,169
+83,Spring 2021,Abyss,69,86,136
+84,Spring 2021,Sea Salt,245,241,218
+85,Spring 2021,Mallard Green,86,114,119
+86,Summer 2021,Electric Orange,236,90,67
+87,Summer 2021,Cloud Blue,221,225,221
+88,Summer 2021,Olive,107,96,67
+89,Fall 2021,English Lavender,113,111,139
+90,Fall 2021,Dark Cherry,123,88,103
+91,Fall 2021,Clover,101,133,80
+92,Fall 2021,Starlight,225,198,168
+93,Fall 2021,Red,172,41,52
+94,Fall 2021,Abyss Blue,84,118,137
+95,Spring 2022,Blue Fog,150,176,199
+96,Spring 2022,Bright Green,123,207,118
+97,Spring 2022,Eucalyptus,117,142,111
+98,Spring 2022,Nectarine,236,102,82
+99,Spring 2022,Flamingo,237,116,140
+100,Fall 2022,Red,209,56,66
+101,Fall 2022,Succulent,156,163,147
+102,Fall 2022,Elderberry,136,106,117
+103,Fall 2022,Slate Blue,103,113,127
+104,Fall 2022,Storm Blue,98,111,136
+105,Fall 2022,Sunglow,245,194,102
+106,Spring 2023,Sky,214,234,244
+107,Spring 2023,Purple Fog,184,174,183
+108,Spring 2023,Sprout Green,202,239,138
+109,Fall 2023,Light Pink,247,207,187
+110,Fall 2023,Red,173,45,54
+111,Fall 2023,Clay,122,109,93
+112,Fall 2023,Mulberry,118,63,74
+113,Fall 2023,Winter Blue,101,120,140
+114,Fall 2023,Orange Sorbet,240,150,102
+115,Fall 2023,Cypress,117,126,94
+116,Fall 2023,Guava,236,94,96
