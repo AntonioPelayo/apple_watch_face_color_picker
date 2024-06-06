@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Color Changer</title>
+    <title>Apple Watch Face Color Picker</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-
-    <h1>Background Color Changer</h1>
-
-    <label for="seasonDropdown">Choose a season:</label>
-    <select id="seasonDropdown">
-    </select>
-
-    <label for="nameDropdown">Choose a color by name:</label>
-    <select id="nameDropdown">
-    </select>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            loadCSV('../data/watch_face_colors.csv');
-        });
-    </script>
-
+    <div class="container">
+        <h1>Apple Watch Face Color Picker</h1>
+        <div id="color_dropdowns">
+            <label for="seasonDropdown">Choose a season:</label>
+            <select id="seasonDropdown"></select>
+            <label for="nameDropdown">Choose a color by name:</label>
+            <select id="nameDropdown"></select>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Created by
+            <br>
+            <img src="images/github_icon.png"> <a href="https://www.github.com/AntonioPelayo">Antonio Pelayo</a>
+        </p>
+    </footer>
 </body>
 </html>

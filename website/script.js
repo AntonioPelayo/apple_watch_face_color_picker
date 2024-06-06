@@ -68,3 +68,7 @@ function setBackgroundColorByName(name, colorData) {
         document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     }
 }
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    loadCSV('../data/watch_face_colors.csv');
+});
