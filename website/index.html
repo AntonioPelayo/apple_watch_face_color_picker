@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Color Changer</title>
     <title>Apple Watch Face Color Picker</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Apple Watch Face Color Picker</h1>
         <div id="color_dropdowns">
-            <label for="seasonDropdown">Choose a season:</label>
+            <label for="colorDropdown">Choose a color by name:</label>
+            <select id="colorDropdown"></select>
+            <label for="seasonDropdown">Filter by season:</label>
             <select id="seasonDropdown"></select>
-            <label for="nameDropdown">Choose a color by name:</label>
-            <select id="nameDropdown"></select>
         </div>
     </div>
     <footer>
@@ -24,5 +22,6 @@
             <img src="images/github_icon.png"> <a href="https://www.github.com/AntonioPelayo">Antonio Pelayo</a>
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

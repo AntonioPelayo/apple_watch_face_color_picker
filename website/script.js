@@ -8,7 +8,14 @@ function loadCSV(filePath) {
                 const colorData = lines.map(line => line.split(','));
                 colorData.shift(); // Remove the header
 
-                populateDropdowns(colorData);
+                window.appleWatchColors = colorData.map(data => ({
+                    season: data[1],
+                    name: data[2],
+                    r: parseInt(data[3]),
+                    g: parseInt(data[4]),
+                    b: parseInt(data[5])
+                }));
+                populateDropdowns(window.appleWatchColors);
             }
         }
     };
@@ -17,9 +24,9 @@ function loadCSV(filePath) {
 
 function populateDropdowns(colorData) {
     const seasonDropdown = document.getElementById('seasonDropdown');
-    const nameDropdown = document.getElementById('nameDropdown');
+    const colorDropdown = document.getElementById('colorDropdown');
 
-    const seasons = Array.from(new Set(colorData.map(data => data[1])));
+    const seasons = Array.from(new Set(colorData.map(data => data.season)));
     seasons.unshift("All Seasons"); // Add an "All Seasons" option
 
     seasons.forEach(season => {
@@ -30,42 +37,53 @@ function populateDropdowns(colorData) {
     });
 
     seasonDropdown.addEventListener('change', function() {
-        populateNameDropdown(this.value, colorData);
+        populateColorDropdown(this.value, colorData);
     });
 
-    populateNameDropdown("All Seasons", colorData);
+    colorDropdown.addEventListener('change', function() {
+        updateSeasonDropdown(this.value, colorData);
+        setBackgroundColorByName(this.value, colorData);
+    });
+
+    populateColorDropdown("All Seasons", colorData);
 }
 
-function populateNameDropdown(season, colorData) {
-    const nameDropdown = document.getElementById('nameDropdown');
-    nameDropdown.innerHTML = ""; // Clear existing options
+function populateColorDropdown(season, colorData) {
+    const colorDropdown = document.getElementById('colorDropdown');
+    colorDropdown.innerHTML = ""; // Clear existing options
 
     let filteredData;
     if (season === "All Seasons") {
         filteredData = colorData;
     } else {
-        filteredData = colorData.filter(data => data[1] === season);
+        filteredData = colorData.filter(data => data.season === season);
     }
 
     filteredData.forEach(data => {
         const option = document.createElement('option');
-        option.value = data[2];
-        option.textContent = data[2];
-        nameDropdown.appendChild(option);
+        option.value = data.name;
+        option.textContent = data.name;
+        colorDropdown.appendChild(option);
     });
 
-    nameDropdown.addEventListener('change', function() {
-        setBackgroundColorByName(this.value, colorData);
-    });
+    if (filteredData.length > 0) {
+        setBackgroundColorByName(filteredData[0].name, colorData);
+        updateSeasonDropdown(filteredData[0].name, colorData);
+    }
+}
 
-    setBackgroundColorByName(filteredData[0][2], colorData);
+function updateSeasonDropdown(colorName, colorData) {
+    const selectedColor = colorData.find(data => data.name === colorName);
+    const seasonDropdown = document.getElementById('seasonDropdown');
+    if (selectedColor) {
+        seasonDropdown.value = selectedColor.season;
+    }
 }
 
 function setBackgroundColorByName(name, colorData) {
-    const selectedColor = colorData.find(data => data[2] === name);
+    const selectedColor = colorData.find(data => data.name === name);
     if (selectedColor) {
-        const [r, g, b] = selectedColor.slice(3);
-        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        document.body.style.backgroundColor = `rgb(${selectedColor.r}, ${selectedColor.g}, ${selectedColor.b})`;
     }
 }
 
